@@ -1,0 +1,117 @@
+.About {
+  display: flex;
+  min-height: 100vh;
+  margin: auto;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.About-container {
+  width: 55%;
+  align-items: flex-start;
+}
+.About-head {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  gap: 1rem;
+  align-items: center;
+}
+.About-head h2 {
+  margin: 0;
+  font-weight: 600;
+}
+.About-head .Navbar-Num {
+  font-size: 24px;
+}
+.About-main {
+  padding-top: 1rem;
+  display: flex;
+  text-align: left;
+  color: azure;
+  justify-content: center;
+}
+.About-main p {
+  text-align: justify;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.About-line {
+  width: 30%;
+  height: 0.1px;
+  background: #b5c5c5;
+  opacity: 0.6;
+}
+.About-main a {
+  text-decoration: none;
+  color: goldenrod;
+  box-shadow: inset 0 0 0 0 goldenrod;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.About-main a:hover {
+  box-shadow: inset 100px 0 0 0 goldenrod;
+  color: white;
+}
+.About-main ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 240px));
+  gap: 0px 10px;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  overflow: hidden;
+  list-style: none;
+}
+.About-main li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-size: var(--fz-xs);
+}
+.About-main li::before {
+  content: "▹";
+  position: absolute;
+  top: 6px;
+  left: 0px;
+  color: goldenrod;
+  font-size: var(--fz-sm);
+  line-height: 12px;
+}
+.About-main img {
+  float: left;
+  margin: 50px;
+  filter: sepia(0.8);
+  z-index: 1;
+  box-shadow: -20px 20px 0px 0px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: -20px 20px 0px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: -20px 20px 0px 0px rgba(0, 0, 0, 1);
+}
+.About-main img:hover {
+  filter: sepia(0);
+  transition: all 0.3s ease-in;
+  box-shadow: -25px 25px 0px 0px goldenrod;
+  -webkit-box-shadow: -25px 25px 0px 0px goldenrod;
+  -moz-box-shadow: -25px 25px 0px 0px goldenrod;
+}
+@media screen and (max-width: 1023px) {
+  .About-container {
+    width: 90%;
+    margin-bottom: 5rem;
+  }
+  .About-main{
+    flex-wrap: wrap;
+  }
+  .About-main li{
+    text-align: left;
+  }
+  .About-main img {
+    margin: 10px;
+  }.About-main p {
+    margin-block-start: 2em;
+    margin-block-end: 1em;
+  }
+}

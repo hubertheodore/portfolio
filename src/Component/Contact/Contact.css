@@ -1,0 +1,119 @@
+.Contact {
+    display: flex;
+    min-height: 80vh;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Contact-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 60%;
+    gap: 2rem;
+}
+.Contact-up {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+.Contact-line {
+    height: 1px;
+    width: 20%;
+    background: #b5c5c5;
+}
+.Contact-line:nth-last-of-type(1) {
+    width: 40%;
+}
+.Contact-up h2 {
+    font-weight: 600;
+}
+.Contact-down > form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.Contact-input {
+    width: 100%;
+    height: 2rem;
+    padding: 0.3rem;
+    outline: none;
+    border: 2px solid goldenrod;
+    border-radius: 2px;
+    font-size: 16px;
+    background-color: #b5c5c5;
+}
+.Contact-input:focus {
+    background-color: azure;
+}
+.Contact-down textarea {
+    height: 6rem !important;
+    width: 100%;
+}
+
+.Contact-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 450px;
+}
+.Contact-row label {
+    font-size: large;
+    font-weight: 500;
+}
+.Contact-button {
+    background: none;
+    border: 2px solid goldenrod;
+    border-radius: 2px;
+    width: 100%;
+    height: 2.5rem;
+    color: whitesmoke;
+    -webkit-transition: ease-out 0.3s;
+    -moz-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
+    max-width: 450px;
+}
+.Contact-button:hover {
+    box-shadow: inset 0 100px 0 0 gold;
+    -webkit-transition: ease-out 0.3s;
+    -moz-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
+}
+.Contact-hide {
+    display: none !important;
+    transition: all 0.3s ease-in-out;
+}
+.Contact-done{
+    display: flex;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.Contact-done h1{
+    color: goldenrod;
+    font-size: 3rem;
+}
+.Contact-done svg{
+    cursor: pointer;
+    font-size: 3rem;
+}
+.Contact-done svg:hover{
+    color: gold;
+    transform: translate(0px, 3px);
+    transition: all 0.2s ease-in-out;
+}
+@media screen and (max-width: 1023px) {
+    .Contact-container {
+        width: 90%;
+    }
+}

@@ -1,0 +1,17 @@
+.Footer{
+    padding: 1rem;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+.Footer a{
+    text-decoration: none;
+    color: #b5c5c5;
+    opacity: 0.5;
+    font-size: 12px;
+}
+.Footer a:hover{
+    color: goldenrod;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}

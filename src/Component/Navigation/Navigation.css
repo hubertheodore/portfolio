@@ -1,0 +1,89 @@
+.Navigation {
+  width: 100%;
+}
+
+.Nav-hidden {
+  transform: translate(0px, -100px);
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease 0.3s;
+  -moz-transition: all 0.3s ease 0.3s;
+  -o-transition: all 0.3s ease 0.3s;
+  -ms-transition: all 0.3s ease 0.3s;
+  transition: all 0.3s ease 0.3s;
+}
+.Navbar {
+  display: flex;
+  position: fixed;
+  top: 0px;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 2rem;
+  -webkit-transition: all 0.2s ease 0.2s;
+  -moz-transition: all 0.2s ease 0.2s;
+  -o-transition: all 0.2s ease 0.2s;
+  -ms-transition: all 0.2s ease 0.2s;
+  transition: all 0.2s ease 0.2s;
+}
+.Navbar-C1 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.Navbar-C1 img:hover {
+  transition: 0.2s;
+  filter: contrast(0.7);
+}
+
+.Navbar-C1 img {
+  width: 50px;
+  height: auto;
+}
+.Navbar-C2 {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+.Navbar-C2 a {
+  text-decoration: none;
+  color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.3rem;
+}
+.Navbar-Num {
+  color: goldenrod;
+}
+.Navbar-C2 :hover {
+  color: goldenrod;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.Navbar-M {
+  position: fixed;
+  width: 31px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.Nav-Show {
+  z-index: 5;
+  background: #110a2f;
+  padding: 1rem;
+  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-width: 1023px) {
+  .Navbar {
+    padding: 20px;
+  }
+  .Navbar-C2 {
+    display: none;
+  }
+}
